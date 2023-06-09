@@ -11,7 +11,6 @@ const ListMahasiswa = () => {
     }, []);
 
     const getMahasiswa = async () => {
-        // const response = await axios.get(`${BACKEND_URL}/api/mahasiswa`);
         const response = await axios.get(`${BACKEND_URL}/api/mahasiswa`);
         setMahasiswa(response.data.data);
     }
